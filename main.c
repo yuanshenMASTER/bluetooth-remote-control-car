@@ -134,17 +134,4 @@ int main(void){
 
 }
 
-//void EXTI1_IRQHandler(void){
 
-//	if(EXTI_GetITStatus(EXTI_Line1) == SET)
-//	{	
-//		TIM_Cmd(TIM2,ENABLE);//开始计时
-//		while(GPIO_ReadInputDataBit(GPIOB,GPIO_Pin_1));//A1高电平循环
-//		Counter = TIM_GetCounter(TIM2)*340/200;
-//		TIM_Cmd(TIM2,DISABLE);//计时停
-//		TIM_SetCounter(TIM2,0);//CNT值清0
-//		OLED_ShowNum(1,1,Counter,3);
-//		
-//		EXTI_ClearITPendingBit(EXTI_Line1);
-//	}
-//}
