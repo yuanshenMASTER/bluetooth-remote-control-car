@@ -1,6 +1,6 @@
 #include "stm32f10x.h"
 
-void SG90_Init(void) //pwm¶æ»úµ÷ËÙ
+void SG90_Init(void) //pwmÂ¶Ã¦Â»ÃºÂµÃ·Ã‹Ã™
 {
 	RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM2, ENABLE);
 	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA, ENABLE);
@@ -36,27 +36,6 @@ void PWM_SetCompare2(uint16_t Compare)
 	TIM_SetCompare2(TIM2, Compare);
 }
 
-//void Servo_SetAngle(float Angle)
-//{
-//	PWM_SetCompare2(Angle / 180 * 2000 + 500);
-//}
 
-//void Leme_lelf(void){
-//	
-//	Servo_SetAngle(135);//×ó
-//		
-//}
-
-//void Leme_right(void){
-//	
-//	Servo_SetAngle(0);//ÓÒ
-//	
-//}
-
-//void Leme_mid(void){
-//	
-//	Servo_SetAngle(90);//ÖÐ
-//	
-//}
 
 
